@@ -1,0 +1,23 @@
+body {
+  padding: 5% 30%;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 2% 0;
+  width: 50%;
+}
+
+form button {
+  width: 35%;
+  margin: 2% 0;
+}
