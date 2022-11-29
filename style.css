@@ -1,5 +1,7 @@
 body {
-  padding: 5% 30%;
+  padding: 5% 20%;
+  text-align: center;
+  align-items: center;
 }
 
 ul {
@@ -10,6 +12,7 @@ ul {
 form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 input {
@@ -18,6 +21,23 @@ input {
 }
 
 form button {
-  width: 35%;
-  margin: 2% 0;
+  width: 25%;
+  margin: 2% 0 0 26.5%;
+}
+
+.title-and-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  height: 5vh;
+  background: rgb(217, 217, 217);
+}
+
+.book-list {
+  border: 1px solid black;
+}
+
+.title-and-author:nth-child(even) {
+  background-color: white;
 }
