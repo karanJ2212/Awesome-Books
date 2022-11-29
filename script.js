@@ -24,7 +24,7 @@ class UI {
       registeredBooks.innerHTML += `
       <div class="title-and-author"> 
         <p class="Title">"${Books[i].title}" by  ${Books[i].author}</p>
-        <button class="button" onclick="remove(${i})">remove</button>
+        <button class="button" onclick="UI.remove(${i})">remove</button>
       </div>
 
      `;
@@ -33,6 +33,14 @@ class UI {
       Title.focus();
     }
   }
+//remove
+
+  static remove(index) {
+    Books.splice(index, 1);
+    UI.addBooks();
+    localStorage.setItem("Books", JSON.stringify(Books));
+  }
+  
 }
 
 window.onload = () => {
@@ -51,10 +59,4 @@ addButton.addEventListener("click", () => {
   localStorage.setItem("Books", JSON.stringify(Books));
 });
 
-//remove
 
-function remove(index) {
-  Books.splice(index, 1);
-  UI.addBooks();
-  localStorage.setItem("Books", JSON.stringify(Books));
-}
