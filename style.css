@@ -118,3 +118,9 @@ nav {
 a:hover {
   color: rgb(42, 90, 161);
 }
+
+.emptymsg {
+  display: none;
+  margin-top: 15vh;
+  font-size: 0.95rem;
+}
